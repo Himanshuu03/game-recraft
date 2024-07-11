@@ -1,4 +1,4 @@
-import logo from "../assets/gameCraftLogo.png";
+import logo from "../../assets/gameCraftLogo.png";
 import { IoSearchSharp } from "react-icons/io5";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { useState } from "react";
