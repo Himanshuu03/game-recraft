@@ -1,0 +1,92 @@
+nav{
+    background-color: black;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    background-color: black;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.icon{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.hamBurgerMenu{
+    display: none;
+}
+.navlogo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.rotateCross{
+    animation: rotateCross 0.3s linear 0s;
+}
+.navlogo p:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.navlogo p:nth-child(2){
+    font-size: 1rem;
+    color:gray;
+}
+.navlogo img{
+    width: 80px;
+    height: 80px;
+}
+.navBarContent{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.navBarContent li:hover{
+    color: #65F03E;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out 0s;
+}
+@media screen and (max-width:786px){ 
+    .hamBurgerMenu{
+        display: flex;
+    }
+    .navMobileDropdown{
+        width: 100%;
+        flex-direction: column;
+        position: fixed;
+        top: 89px;
+        left: 0;
+        background-color: black;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .navMobileDropdown li{
+        width: 300px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #121212;
+        padding: 16px;
+        margin: 10px;
+    }
+}
+.showMobile{
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out 0s;
+}
+.clossMobile{
+    transition: max-height 0.5s ease-in-out 0s;
+}
+@keyframes rotateCross {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
