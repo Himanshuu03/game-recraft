@@ -1,0 +1,192 @@
+footer{
+    background-color: black;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+}
+.footerlogo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.footerlogo p:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+.footerlogo p:nth-child(2){
+    font-size: 1rem;
+    color:gray;
+    margin: 0;
+}
+.footerlogo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.footerInfo ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 17px;
+    list-style: none;
+}
+.footerContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+.footerContent ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footerContent li{
+    cursor: pointer;
+    display: block;
+    color: gray;
+}
+.footerContent li:hover{
+    color: white;
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out 0s;
+}
+.footerContact{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.footerContactIcons{
+    display: flex;
+    flex-direction: column; 
+    color: white; 
+}
+.footerContactIcons h4{
+    font-weight: 500;
+}
+.footerContactIcons ul{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    font-size:50px;
+    color: gray;
+}
+.footerContactIcons li:hover{
+    color: white;
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out 0s;
+}
+.footerIcon{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.footerQuote{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid gray;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.footerCopyRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    padding: 20px;
+    background-color:#121212;
+    color: white;
+}
+@media screen and (max-width:786px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    .footerCompInfo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerInfo ul{
+        gap:0px;
+        align-items: center;
+    }
+    .footerContent{
+        gap: 5px;
+    }
+    .footerContent h3{
+        display: flex;
+        justify-content: space-between;
+        background-color: #121212;
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        border-bottom: 1px solid gray;
+    }
+    .footerMobileDropdown{
+        background-color: #121212;
+        border-radius: 10px;
+        max-height: 0px;
+        padding-right: 10px ;
+        overflow: hidden;
+    }
+    .footerQuote{
+        padding: 10px;
+        font-size: 15px;
+        gap: 20px;
+    }
+}
+.showMobile{
+    max-height: 500px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in-out 0s;
+}
+.clossMobile{
+    transition: max-height 0.5s ease-in-out 0s;
+}
+@keyframes rotateUp{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotateDown{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.rotateUp{
+    animation: rotateUp 0.5s ease-in-out 0s;
+    animation-fill-mode: forwards;
+}
+.rotateDown{
+    animation: rotateDown 0.5s ease-in-out 0s;
+    animation-fill-mode: forwards;
+}
