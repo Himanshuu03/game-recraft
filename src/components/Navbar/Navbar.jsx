@@ -10,6 +10,8 @@ function Navbar() {
     }
   return (
     <nav>
+      <div className={styles.nav}>
+
       <div className={styles.hamBurgerMenu} onClick={handleMobileMenu}>
         {
             showMobileMenu ? <RxCross1 className={`${styles.icon} ${styles.rotateCross}`}/> : <RxHamburgerMenu className={styles.icon}/>
@@ -32,10 +34,11 @@ function Navbar() {
         </ul>
       </div>
       <div>
-      <ul className={styles.navBarContent}>
+      <ul className={`${styles.navBarContent} ${styles.signIn}`}>
           <li><IoSearchSharp className={styles.icon}/></li>
           <li>Sign in</li>
         </ul>
+      </div>
       </div>
     </nav>
   );

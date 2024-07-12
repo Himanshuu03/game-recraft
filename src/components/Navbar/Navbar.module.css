@@ -1,12 +1,19 @@
 nav{
+    position: relative;
     background-color: black;
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    height: 100px;
+}
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .icon{
     color: white;
@@ -45,6 +52,9 @@ nav{
     gap: 20px;
     cursor: pointer;
     font-size: 17px;
+}
+.signIn{
+    padding-right:10px;
 }
 .navBarContent li:hover{
     color: #65F03E;
